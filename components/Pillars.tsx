@@ -1,3 +1,4 @@
+import React from "react";
 import { Card } from "./ui/card";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { Button } from "./ui/button";
@@ -61,7 +62,7 @@ const features = [
 ];
 
 function PillarCard({ feature }: { feature: typeof features[0] }) {
-  const layouts: Record<string, JSX.Element> = {
+  const layouts: Record<string, React.ReactNode> = {
     centered: (
       <div className="flex flex-col items-center text-center gap-4 w-full h-full justify-between py-4">
         <div className="flex flex-col items-center gap-3">
