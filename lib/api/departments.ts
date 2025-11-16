@@ -21,7 +21,7 @@ export interface AdmissionRequirement {
   departmentId: number;
 }
 
-export interface Faculty {
+export interface DepartmentFaculty {
   id: number;
   universityId: number;
   name: string;
@@ -48,7 +48,7 @@ export interface Department {
   website?: string;
   updatedAt?: string;
   // Relations
-  faculty?: Faculty;
+  faculty?: DepartmentFaculty;
   programTags?: ProgramTag[];
   admissionRequirements?: AdmissionRequirement[];
 }
